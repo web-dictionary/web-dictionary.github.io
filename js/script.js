@@ -82,7 +82,7 @@ function bindPostData (form) {
 
         const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-        postData('../db.json', json)
+        postData('https://web-dictionary.github.io/db.json', json)
             .then(data => console.log(data))
             .catch(() => {
                 openModal();
@@ -99,7 +99,7 @@ function bindPostData (form) {
 
 // Получение данных из БД
 
-getData('../db.json')
+getData('https://web-dictionary.github.io/db.json')
     .then(data => {
         data.forEach(({word, translate}) => {
             listItem.forEach((item) => {
