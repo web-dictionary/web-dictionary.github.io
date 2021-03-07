@@ -1,0 +1,119 @@
+{
+  "list": [
+    {
+      "word": "Apple",
+      "translate": "яблоко",
+      "id": 1
+    },
+    {
+      "word": "Bottle",
+      "translate": "бутылка",
+      "id": 2
+    },
+    {
+      "word": "City",
+      "translate": "город",
+      "id": 3
+    },
+    {
+      "word": "Dot",
+      "translate": "точка",
+      "id": 4
+    },
+    {
+      "word": "Eye",
+      "translate": "глаз",
+      "id": 5
+    },
+    {
+      "word": "Friend",
+      "translate": "друг",
+      "id": 6
+    },
+    {
+      "word": "Orange",
+      "translate": "апельсин/оранжевый",
+      "id": 7
+    },
+    {
+      "word": "Yellow",
+      "translate": "желтый",
+      "id": 8
+    },
+    {
+      "word": "Zero",
+      "translate": "ноль",
+      "id": 9
+    },
+    {
+      "word": "Air",
+      "translate": "воздух",
+      "id": 10
+    },
+    {
+      "word": "Order",
+      "translate": "порядок",
+      "id": 11
+    },
+    {
+      "word": "Zoo",
+      "translate": "зоопарк",
+      "id": 12
+    },
+    {
+      "word": "Disaster",
+      "translate": "катастрофа",
+      "id": 13
+    },
+    {
+      "word": "Diseas",
+      "translate": "болезнь",
+      "id": 14
+    },
+    {
+      "word": "Book",
+      "translate": "книга",
+      "id": 15
+    },
+    {
+      "word": "Drug",
+      "translate": "наркотик",
+      "id": 16
+    },
+    {
+      "word": "Dealer",
+      "translate": "поставщик",
+      "id": 17
+    },
+    {
+      "word": "House",
+      "translate": "дом",
+      "id": 18
+    },
+    {
+      "word": "Yob",
+      "translate": "хулиган",
+      "id": 19
+    },
+    {
+      "word": "Passer-by",
+      "translate": "прохожий",
+      "id": 20
+    },
+    {
+      "word": "Embarrass",
+      "translate": "смущать",
+      "id": 21
+    },
+    {
+      "word": "Dustbin",
+      "translate": "мусорка",
+      "id": 22
+    },
+    {
+      "word": "Lifestyle",
+      "translate": "образ жизни",
+      "id": 23
+    }
+  ]
+}

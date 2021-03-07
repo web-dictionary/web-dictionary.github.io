@@ -1,0 +1,85 @@
+.dictionary
+    padding-top: 50px
+    background: url("../img/dictionary_bg.jpg") center (center / cover) no-repeat
+    height: 100vh
+    width: 100%
+    margin: 0
+    box-sizing: border-box
+
+    &__form
+        display: grid
+        grid-template-columns: 144px 30px 144px
+        grid-template-rows: 40px 50px
+        row-gap: 15px
+        justify-content: center
+        &_item
+            position: relative
+
+    &__body
+        padding-top: 30px
+
+    &__divider
+        width: 100%
+        height: 100%
+        text-align: center
+        padding-top: 10px
+        grid-column: 2/3
+        color: #fff
+
+    &__input
+        position: relative
+        width: 100%
+        height: 100%
+        outline: none
+        border: 2px solid #000
+        border-radius: 20px
+        padding: 7px 10px
+        box-sizing: border-box
+
+    &__label
+        position: absolute
+        width: 100px
+        top: -20px
+        left: 20px
+        color: #fff
+        z-index: 2
+        text-align: center
+
+    &__list
+        position: relative
+        width: 250px
+        height: 300px
+        outline: none
+        border: 2px solid #000
+        border-right: 1px solid #000
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        padding: 20px
+        margin: 0 auto
+        overflow: auto
+        background: #fff
+        &_item
+            width: 98%
+            border: none
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+            li
+                list-style-type: none
+                margin-bottom: 5px
+
+    &__button
+        display: block
+        cursor: pointer
+        position: relative
+        text-transform: uppercase
+        text-align: center
+        font-weight: 700
+        border-radius: 18px
+        border: 2px solid #000
+        background: #fff
+        outline: none
+        grid-column: 1/4
+
+.blur
+    filter: blur(2px)

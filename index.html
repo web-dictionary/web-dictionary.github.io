@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Онлайн-словарь</title>
+
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="dictionary">
+        <form id="dictionary__form" class="dictionary__form">
+            <div class="dictionary__form_item">
+                <label class="dictionary__label" for="word">
+                    <span>Англ. слово</span>
+                </label>
+                <input required name="word" placeholder="Disaster" id="word" type="text" class="dictionary__input dictionary__word">
+            </div>
+
+            <div class="dictionary__divider">-</div>
+
+            <div class="dictionary__form_item">
+                <label class="dictionary__label dictionary__label-short" for="translate">
+                    <span>Перевод</span>
+                </label>
+                <input required name="translate" placeholder="катастрофа" id="translate" type="text" class="dictionary__input dictionary__translate">
+            </div>
+
+            <button class="dictionary__button">Записать</button>
+        </form>
+
+        <div class="dictionary__body">
+            <div class="dictionary__list">
+                <ul id="A" class="dictionary__list_item"></ul>
+                <ul id="B" class="dictionary__list_item"></ul>
+                <ul id="C" class="dictionary__list_item"></ul>
+                <ul id="D" class="dictionary__list_item"></ul>
+                <ul id="E" class="dictionary__list_item"></ul>
+                <ul id="F" class="dictionary__list_item"></ul>
+                <ul id="G" class="dictionary__list_item"></ul>
+                <ul id="H" class="dictionary__list_item"></ul>
+                <ul id="I" class="dictionary__list_item"></ul>
+                <ul id="J" class="dictionary__list_item"></ul>
+                <ul id="K" class="dictionary__list_item"></ul>
+                <ul id="L" class="dictionary__list_item"></ul>
+                <ul id="M" class="dictionary__list_item"></ul>
+                <ul id="N" class="dictionary__list_item"></ul>
+                <ul id="O" class="dictionary__list_item"></ul>
+                <ul id="P" class="dictionary__list_item"></ul>
+                <ul id="Q" class="dictionary__list_item"></ul>
+                <ul id="R" class="dictionary__list_item"></ul>
+                <ul id="S" class="dictionary__list_item"></ul>
+                <ul id="T" class="dictionary__list_item"></ul>
+                <ul id="U" class="dictionary__list_item"></ul>
+                <ul id="V" class="dictionary__list_item"></ul>
+                <ul id="W" class="dictionary__list_item"></ul>
+                <ul id="X" class="dictionary__list_item"></ul>
+                <ul id="Y" class="dictionary__list_item"></ul>
+                <ul id="Z" class="dictionary__list_item"></ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal_content">
+            Упс... <br> Что-то пошло не так...
+            <div data-close class="modal-close">&times;</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
