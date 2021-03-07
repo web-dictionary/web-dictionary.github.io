@@ -83,7 +83,10 @@ function bindPostData (form) {
         const json = JSON.stringify(Object.fromEntries(formData.entries()));
 
         postData('db.json', json)
-            .then(data => console.log(data))
+            .then(data => () => {
+                console.log(data);
+                console.log('Данные занесены в БД');
+            })
             .catch(() => {
                 openModal();
                 setTimeout(hideModal, 5000);
@@ -92,12 +95,22 @@ function bindPostData (form) {
             .finally(() => {
                 inputTranslate.value = '';
                 inputWord.value = '';
-                console.log('Данные занесены в БД');
             });
     });
 }
 
 // Получение данных из БД
+async function getData (url) {
+    let res = await fetch(url);
+
+    if(!res.ok) {
+        openModal();
+        setTimeout(hideModal, 5000);
+        throw new Error(`Could not fetch ${url}, status ${res.status}.`);
+    }
+
+    return await res.json();
+}
 
 getData('db.json')
     .then(data => {
@@ -113,15 +126,3 @@ getData('db.json')
             });
         });
     });
-
-async function getData (url) {
-    let res = await fetch(url);
-
-    if(!res.ok) {
-        openModal();
-        setTimeout(hideModal, 5000);
-        throw new Error(`Could not fetch ${url}, status ${res.status}.`);
-    }
-
-    return await res.json();
-}
